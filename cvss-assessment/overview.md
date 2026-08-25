@@ -1,6 +1,6 @@
-## Vulnerability
+# Vulnerability Overview
 
-CVE-2009-0658 — Adobe Acrobat Buffer Overflow Vulnerability
+## CVE-2009-0658 — Adobe Acrobat Buffer Overflow Vulnerability
 
 Adobe Acrobat and Reader 9.0 and earlier are affected by a buffer overflow vulnerability involving malformed JBIG2 image streams embedded in PDF documents. Successful exploitation can allow arbitrary code execution with the privileges of the victim running the vulnerable application.
 
