@@ -4,13 +4,13 @@
 
 ### Attack Vector — Local (AV:L)
 
-The vulnerability is scored as Local because the vulnerable component is not bound to the network and the attacker's path is read/write/execute. So, according to "FIRST", if the attacker exploits the vulnerability by accessing the system locally (e.g keystrokes), remotely (via SSH), or if the attacker relies on User Interaction by another person to perform actions required to exploit the vulnerability (e.g tricking a legitimate user into opening a malicious document), then the attack vector is considered Local.
+The vulnerability is scored as Local because the vulnerable component is not bound to the network and the attacker's path is read/write/execute. So, according to FIRST, if the attacker exploits the vulnerability by accessing the system locally (e.g., keystrokes), remotely (via SSH), or if the attacker relies on User Interaction by another person to perform actions required to exploit the vulnerability (e.g., tricking a legitimate user into opening a malicious document), then the attack vector is considered Local.
 
 ### Attack Complexity — Low (AC:L)
 
-The attack complexity is rated Low because the attacker can expect repeatable success against the vulnerable component. And successful attack does not depend on conditions beyond attacker's control.
+The attack complexity is rated Low because the attacker can expect repeatable success against the vulnerable component. A successful attack does not depend on conditions beyond attacker's control.
 
-A specially crafted PDF can trigger the buffer overflow when processed by a vulnerable version of Adobe Acrobat or Reader. The exploitation scenario does not depend on a race condition or other highly specialised circumstances.
+A specially crafted PDF can trigger the buffer overflow when processed by a vulnerable version of Adobe Acrobat or Reader. The exploitation scenario does not depend on a race condition or other highly specialized circumstances.
 
 ### Privileges Required — None (PR:N)
 
@@ -24,7 +24,7 @@ User Interaction is Required because the victim must open the malicious PDF for 
 
 This is a significant part of the attack chain. Simply delivering the malicious document to the victim is not sufficient; the vulnerable application must process the document.
 
-The attacker won't be able to exploit the vulnerability if the user does not open the file. 
+The attacker won't be able to exploit the vulnerability if the user does not open the file.
 
 ### Scope — Unchanged (S:U)
 
@@ -44,7 +44,7 @@ This can allow an attacker to access information available to the compromised pr
 
 Successful arbitrary code execution can allow an attacker to modify data, applications, or system settings available to the compromised account.
 
-Under the worst-case scenario, an attacker could gain sufficient control to make significant unauthorised changes to the affected system. Therefore, the Integrity impact is assessed as High.
+Under the worst-case scenario, an attacker could gain sufficient control to make significant unauthorized changes to the affected system. Therefore, the Integrity impact is assessed as High.
 
 ### Availability — High (A:H)
 
