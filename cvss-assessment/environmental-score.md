@@ -10,7 +10,7 @@ The organization's workstations handle highly sensitive corporate documents and 
 
 Protecting the integrity of the organization's systems and data is essential. Preventing malware installation and unauthorized modifications to endpoints is particularly important because compromised workstations could be used to affect the wider network.
 
-### Availability Requirement - Medium (AR:M)
+### Availability Requirement — Medium (AR:M)
 
 A compromised or unavailable individual workstation would disrupt the productivity of its user. However, the impact would not directly threaten core network infrastructure or overall business continuity, so the Availability Requirement is assessed as Medium.
 
