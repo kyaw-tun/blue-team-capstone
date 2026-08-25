@@ -22,7 +22,7 @@ CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:H/RL:O/RC:C
 
 Temporal Score: 7.5
 
-The Temporal Score reflects the current state of exploitability, remediation, and confidence in the vulnerability information at the time of this assessment.
+The Temporal Score reflects the state of exploitability, remediation, and confidence in the vulnerability information at the time of this assessment.
 
 ## Conclusion
 
