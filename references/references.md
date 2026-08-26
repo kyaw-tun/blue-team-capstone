@@ -7,7 +7,7 @@
  
 ## Vendor Advisories:
 
- - [APSA09-01 — Adobe Security Advisory](https://helpx.adobe.com/security/products/reader.html)
+ - [APSA09-01 — Adobe Security Advisory](https://www.adobe.com/support/security/advisories/apsa09-01.html)
  
 ## Threat Intelligence & Exploitation:
 
