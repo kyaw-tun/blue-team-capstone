@@ -4,7 +4,9 @@
 
 ### Attack Vector — Local (AV:L)
 
-The vulnerability is scored as Local because the vulnerable component is not bound to the network and the attacker's path is read/write/execute. So, according to FIRST, if the attacker exploits the vulnerability by accessing the system locally (e.g., keystrokes), remotely (via SSH), or if the attacker relies on User Interaction by another person to perform actions required to exploit the vulnerability (e.g., tricking a legitimate user into opening a malicious document), then the attack vector is considered Local.
+The vulnerability requires the malicious PDF to be processed by Adobe Acrobat or Reader on the affected endpoint. The vulnerable application therefore processes the attack input locally rather than exposing the vulnerable component directly as a network service.
+
+Therefore, Attack Vector is assessed as Local (AV:L).
 
 ### Attack Complexity — Low (AC:L)
 
