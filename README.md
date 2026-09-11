@@ -43,6 +43,7 @@ blue-team-capstone/
 │   ├── base-score.md
 │   ├── temporal-score.md
 │   ├── environmental-score.md
+|   ├── overall-score.md
 │   └── screenshots/
 │
 ├── recommendations/
