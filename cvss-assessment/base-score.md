@@ -4,61 +4,41 @@
 
 ### Attack Vector — Local (AV:L)
 
-The vulnerability requires the malicious PDF to be processed by Adobe Acrobat or Reader on the affected endpoint. The vulnerable application therefore processes the attack input locally rather than exposing the vulnerable component directly as a network service.
-
-Therefore, Attack Vector is assessed as Local (AV:L).
+The vulnerability is triggered when a malicious PDF is processed locally by a vulnerable version of Adobe Acrobat or Reader. The attack therefore requires the vulnerable application to process the malicious document on the target system.
 
 ### Attack Complexity — Low (AC:L)
 
-The attack complexity is rated Low because the attacker can expect repeatable success against the vulnerable component. A successful attack does not depend on conditions beyond attacker's control.
-
-A specially crafted PDF can trigger the buffer overflow when processed by a vulnerable version of Adobe Acrobat or Reader. The exploitation scenario does not depend on a race condition or other highly specialized circumstances.
+Exploitation does not require a race condition or other uncommon circumstances. A specially crafted PDF can trigger the vulnerability when processed by the affected application.
 
 ### Privileges Required — None (PR:N)
 
-No special privileges are required to exploit the vulnerability. 
-
-The attacker also does not need an existing account or elevated permissions on the target system. The attack instead relies on getting a malicious document to the victim and convincing the victim to open it.
+The attacker does not need an account or existing privileges on the target system. The attack relies on getting the malicious document to the victim.
 
 ### User Interaction — Required (UI:R)
 
-User Interaction is Required because the victim must open the malicious PDF for exploitation to occur.
-
-This is a significant part of the attack chain. Simply delivering the malicious document to the victim is not sufficient; the vulnerable application must process the document.
-
-The attacker won't be able to exploit the vulnerability if the user does not open the file.
+The victim must open the malicious PDF for the vulnerability to be triggered. Without this interaction, exploitation does not occur.
 
 ### Scope — Unchanged (S:U)
 
-The Scope is Unchanged because exploitation affects the same security authority as the vulnerable component.
-
-The vulnerable Adobe application and the resulting impact are considered within the same security authority of the affected system. Therefore, exploitation does not cross into a separate security authority.
-
-In other words, the attacker cannot gain access to resources that are outside the security authority of the compromised application.
+The exploitation and resulting impact remain within the same security authority as the vulnerable application. The attack does not cross into a separate security authority.
 
 ### Confidentiality — High (C:H)
 
-A successful exploit can result in arbitrary code execution on the affected system.
-
-This can allow an attacker to access information available to the compromised process and potentially the underlying user account. Under the worst-case scenario used by the CVSS assessment, this represents a High Confidentiality impact.
+Successful exploitation can result in arbitrary code execution, allowing an attacker to access sensitive information available to the compromised process or user.
 
 ### Integrity — High (I:H)
 
-Successful arbitrary code execution can allow an attacker to modify data, applications, or system settings available to the compromised account.
-
-Under the worst-case scenario, an attacker could gain sufficient control to make significant unauthorized changes to the affected system. Therefore, the Integrity impact is assessed as High.
+Successful exploitation can allow an attacker to modify data, applications, or system settings available to the compromised account.
 
 ### Availability — High (A:H)
 
-Successful exploitation can also compromise the availability of the affected system.
-
-An attacker who achieves arbitrary code execution could disrupt services, terminate processes, modify system components, or otherwise interfere with the normal operation of the host. Under the CVSS worst-case assessment, this represents a High Availability impact.
+Successful exploitation can allow an attacker to disrupt processes, modify system components, or otherwise interfere with the normal operation of the affected system.
 
 ## Base Score
 
 The selected metrics produce the following CVSS v3.1 vector:
 
-CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+`CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H`
 
 Base Score: 7.8 (High)
 
